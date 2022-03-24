@@ -1,7 +1,7 @@
 <?php
 session_start();
 spl_autoload_register(function($class){
-   require 'classes/'.$class.'.php';
+   require 'classess/'.$class.'.php';
 });
 
 define("DB_HOST", getenv('DB_HOST'));
