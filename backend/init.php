@@ -3,10 +3,10 @@ session_start();
 spl_autoload_register(function($class){
    require 'classes/'.$class.'.php';
 });
-// define("DB_HOST","localhost");
-define("DB_HOST",getenv('greeting2'));
-define("DB_NAME","blogger");
-define("DB_USER","root");
-define("DB_PASS","r00tadmin");
-define('DB_ENCODING', 'utf8');
-define("BASE_URL", "https://php-blog-dev.herokuapp.com/");
+
+define("DB_HOST", getenv('DB_HOST'));
+define("DB_NAME", getenv('DB_NAME'));
+define("DB_USER", getenv('DB_USER'));
+define("DB_PASS", getenv('DB_PASS'));
+define('DB_ENCODING', getenv('DB_ENCODING'));
+define("BASE_URL", getenv('BASE_URL'));
