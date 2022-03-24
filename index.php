@@ -1,6 +1,7 @@
 <?php
 include 'backend/init.php';
 
-echo "My Blog";
+$greeting = getenv('greeting');
+echo $greeting;
 
 
